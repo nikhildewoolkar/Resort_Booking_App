@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pop_bg"
+    tools:context=".PopUpAct">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="Choose a date which is not marked."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:id="@+id/TextView12"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="90dp"
+        />
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="220dp"
+
+        android:layout_height="200dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/cal_bg"
+        app:compactCalendarBackgroundColor="#fff"
+        app:compactCalendarCurrentDayBackgroundColor="#000"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#E57373"
+        app:compactCalendarMultiEventIndicatorColor="#fff"
+        app:compactCalendarTargetHeight="200dp"
+        app:compactCalendarTextColor="#000"
+        app:compactCalendarTextSize="12sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compactcalendar_view"
+        android:layout_marginTop="40dp"
+        android:id="@+id/cancelb"
+        android:text="CANCEL"
+        android:textColor="#000"
+        android:layout_marginLeft="30dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compactcalendar_view"
+        android:layout_marginTop="40dp"
+        android:id="@+id/doneb"
+        android:layout_toRightOf="@+id/cancelb"
+        android:text="DONE"
+        android:textColor="#000"
+        android:layout_marginLeft="40dp"/>
+</RelativeLayout>
